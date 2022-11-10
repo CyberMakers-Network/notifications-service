@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "notifications-service"
+version = "0.1.0"
+description = ""
+authors = ["Uemerson Pinheiro Junior <uemersonpinheirojunior@gmail.com>"]
+readme = "README.md"
+packages = [{include = "notifications_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+discord-webhook = "^0.17.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.5"
+flake8 = "^5.0.4"
+black = {version = "^22.10.0", allow-prereleases = true}
+mypy = "^0.990"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
